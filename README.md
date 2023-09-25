@@ -4,8 +4,8 @@ This is a repo for LLMs measuring moral foundation values in multilingual contex
 2. notes and codes for NUS LLM paper 
 
 # Project Plan
-* Paper 1. Replicate the research design of [The Validity of Sentiment Analysis: Comparing Manual Annotation, Crowd-Coding, Dictionary Approaches, and Machine Learning Algorithms](https://doi.org/10.1080/19312458.2020.1869198). this is a methodology paper
-* Paper 2. LLMs Education tutorial. This is a case-study discussion paper, discuss the performance and ethical concerns of LLMs in coding moral foundation values
+* __Paper 1.__ Replicate the research design of [The Validity of Sentiment Analysis: Comparing Manual Annotation, Crowd-Coding, Dictionary Approaches, and Machine Learning Algorithms](https://doi.org/10.1080/19312458.2020.1869198). this is a methodology paper
+* __Paper 2.__ LLMs Education tutorial. This is a case-study discussion paper, discuss the performance and ethical concerns of LLMs in coding moral foundation values
 
 ## Paper 1. The Validity of Multilingual Moral Foundation Analysis: Comparing Manual Annotation, Crowd-Coding, Dictionary Approaches, Machine/Deep Learning Algorithms and Large Language Models
 
