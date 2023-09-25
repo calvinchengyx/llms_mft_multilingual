@@ -6,8 +6,11 @@ All notes are from the [Oxford LLMs workshop](https://www.llmsforsocialsciene.de
 1. ~~Create a GitHub page to make notes of the workshop and store codes~~
 2. ~~civic_j project summary~~
 3. Clean-up civic_j codes, make it ready for open-repo
-4. Get ready for your moral foundation paper, set the goal, draft the research design, and make a to-do list this week 
+4. Get ready for your moral foundation paper, 
+    1. ~~set the goal~~, `have a better understanding of LLMs and how to use it in works`
+    2. make a to-do list this week 
 5. Go through python tutorial in the workshop page 
+6. 
 
 ### Civic_j project summary
 #### Basic information
@@ -29,7 +32,7 @@ All notes are from the [Oxford LLMs workshop](https://www.llmsforsocialsciene.de
     1. LLMs need less annotated data than ML or DL methods to achieve acceptable results, e.g., I used 1k training records.
     2. LLMs is capable of dealing with multiple tasks at the same time, more efficient, e.g., I asked GPT to code 11 entities' sentiment in one request
     3. LLms can be trained with large datasets if needed, of course, with a bit expensive price.
-3. __Other Implications and Questions__:
+3. __Other Implications and Questions__: 
     1. [Prompt enginnering](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/) is more effective in terms of increasing model performance than training with small amount of data (< 1k records). I spent much time trail the best-performance prompt, and followed the five-basic frameworks provided by OpenAI. `But not sure how the difference will be if we just train with large amount of data`
     2. `What does the training mean, for example in the GPT-3.5-turbo model`? I am not quite sure about the rationale and process of training a chat model. 
     3. Halluciation issue is quite prevalent. Very often the model will return a made-up result, in my case, it returns a sentiment towards an entity which is not mentioned at all in the given tweet. This is so common, almost 10% of result will have the issue, that i have to do another round of keyword matching to filer those `false results`. `how to deal with halluciation problem?` In other words, GPT-3.5-turbo acts really like a human and if you ask it to recode the task, the result might be different. It will depend on the temperature you set and how difficult the text is. 
