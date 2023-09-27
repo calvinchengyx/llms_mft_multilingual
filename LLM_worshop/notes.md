@@ -39,3 +39,13 @@ All notes are from the [Oxford LLMs workshop](https://www.llmsforsocialsciene.de
     4. For general sentiment analysis methods, analyzing an overall sentiment of a piece does not make sense as it simplied the content in terms of meaning, but complicated the task in terms of coding. for example, if a tweet is positive in the first half, but negative in the second half, it is challenging to conclude an overal sentiment. So, we suggest using `entity-based sentiment analysis` only in communication research (social protest contests). 
 
 
+## Day 1.
+
+[Lecturer Lena and materials](https://lena-voita.github.io/nlp_course)
+
+bag of words
+neural network
+[convolution filterr](https://www.ibm.com/topics/convolutional-neural-networks) This IBM webpage gives pretty good and intutitive introduction of convolutional neural network. 
+
+[Unsupervised sentiment neuron](https://openai.com/research/unsupervised-sentiment-neuron) OpenAI 2017 paper
+

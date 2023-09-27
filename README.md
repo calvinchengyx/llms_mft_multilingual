@@ -33,6 +33,4 @@ This is a repo for LLMs measuring moral foundation values in multilingual contex
 4. ultimate goal - recommendations the best practice (hopefully LLMs) for multilingual moral foundation classifications
 
 
-
-
 ###
