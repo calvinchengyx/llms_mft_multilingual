@@ -89,6 +89,45 @@ how to evaluate?
         * ???
         * non-toxic prompts as measured by [Perspective API](https://perspectiveapi.com/)
 
+how to alleviate 
+* remove from the inside
+    * irretative nullspace projections, used to remove gender information in the model for example. 
+* finetune to correct model 
+    * take your unbiased model 
+    * atrribute conditioning
+        * take your bad model
+        * pick a random subset of training data
+        * classify and tag with atrributes accrodingly
+        * finetune your model on this data with attributes
+        * at test time, prepend `nontoxic` before every generation
+        * the model will learn from tags and generate nontoxic content
+* generation (duct-tape) 
+    * word filtering - give a list [forbidden words](https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words)
+    * vocabulary shifting - at each generation step, shift probabilities such that toxic words are downsampled. 
+    * pick the best prediction 
+        * generate many options
+        * use the external model to pick the least toxic one
+        * select it 
+
+So, in summary, what can you do to debiase and detoxic
+1. remove from inside - prob not
+2. balanced dataset - yes
+3. attribute conditioning - maybe
+4. word filtering - maybe
+5. vocabulary shitfing - maybe
+6. generate many and filter/select - yes
+
+Tools that maybe useful for debiasing and detoxification
+[FairPy](https://arxiv.org/abs/2302.05508)
+
+interpretatability
+* attention heads - 
+* saliency/attribution: gradient-based methods
+
+ 
+
+Hallucination issue - ask
+
 
 
 
