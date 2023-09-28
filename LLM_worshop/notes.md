@@ -39,7 +39,9 @@ All notes are from the [Oxford LLMs workshop](https://www.llmsforsocialsciene.de
     4. For general sentiment analysis methods, analyzing an overall sentiment of a piece does not make sense as it simplied the content in terms of meaning, but complicated the task in terms of coding. for example, if a tweet is positive in the first half, but negative in the second half, it is challenging to conclude an overal sentiment. So, we suggest using `entity-based sentiment analysis` only in communication research (social protest contests). 
 
 
-## Day 1.
+## Day 1. the development of generative AI
+
+machine learning, CNN, DNN, LMs, LLMs
 
 [Lecturer Lena and materials](https://lena-voita.github.io/nlp_course)
 
@@ -48,4 +50,45 @@ neural network
 [convolution filterr](https://www.ibm.com/topics/convolutional-neural-networks) This IBM webpage gives pretty good and intutitive introduction of convolutional neural network. 
 
 [Unsupervised sentiment neuron](https://openai.com/research/unsupervised-sentiment-neuron) OpenAI 2017 paper
+
+Notes at the social 
+* [Bard](https://bard.google.com/chat/9713225e31a0b31f), Giuli used Bard for the political stand classification tasks
+* [Llama2](https://replicate.com/blog/run-llama-2-with-an-api) is quite computational heavy 
+* mutilingual text research scholars [Hauke Licht](https://haukelicht.github.io/), [Fabinenne Lind](https://compcommlab.univie.ac.at/team/postdocs/fabienne-lind/)
+
+## Day 2 LLMs bias
+
+We observe discrinmination and bias in current generative AI
+* social stereotypes and unfiar discrinimation
+    * allocational 
+    * representational 
+* exclusionary norms
+    * for example, the definition of gender and family 
+* toxic language, llms can generate toxic content for example gpt2 
+
+Why getting a good model is hard?
+* Current data 
+    * seeing bias is hard in current data, many stereotypes are known only in local context which needs ethnographic work. 
+    * unbiased data is hard
+    * good solution is not obvious - ? just leave blank for controversial questions.
+    * potential todo - transparent for the training data
+* choosing language as data 
+    * what we say is biased - 
+    * we don't say obvious - like to describe the banana as yellow. 
+* training objectivce
+    * what we want VS what we told the model to do 
+* LMs reinforce bias
+
+how to evaluate?
+* general pipeline
+    * create targete dtest set s- evaluate model behaviors in the controlled setting
+    * contrastive sets - probability the model assign good vs bad examples
+        * CrowS-Pairs
+    * prompt - evaluate model generations 
+        * have 100k prompts with different levels of toxicty
+        * ???
+        * non-toxic prompts as measured by [Perspective API](https://perspectiveapi.com/)
+
+
+
 
