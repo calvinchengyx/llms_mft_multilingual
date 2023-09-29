@@ -131,31 +131,43 @@ Coding
 
 what is large model ? - 7 billion (magical number)
 
-## Day 2 Prompt Engineering + ChatGPT
+## Day 3 Prompt Engineering + ChatGPT
 
-### Prompt Paradigm
+### Prompt Engineering
 zero-shot, one-shot, few-shot
 [prompt engineering](https://www.promptingguide.ai/)
 
 #### Prompt Techniques
+Notes: these techniques are not proved with any math equations, they are `experience` - some people tried and proved with enough examples, then they stay in the community.
+
 * __chain of thoughts (CoT)__: give the model to think - specific the steps to do the task. 
-* __self-consistence__: give same prompt for several times, then choose the most consistent answer in the final set. 
+* __self-consistency__: give same prompt for several times, then choose the most consistent answer in the final set. 
     1. prompt a language model with CoT techniques
     2. replace the `greedy decode` to generate a diverse set of reasoning paths. Remember the model to train to predict the next token. `greedy decode` means the model will give the most probable words giving the input. the answer could be different if you input same answer many times. 
     3. marginalize out the reasoning paths and aggregate by choosing the most consistent answer in the final answer set.
     * _Notes_: the key of using human coders is we hope them are not correlated. model paramaters, it would be great if you can access those numbers. 
-    
+* __generated knowledge prompting__: basically give definitions of some. so if you give the model some knowledge, it will be better. 
+* __least-to-most prompting__: decompose question into subquestions, and then ask the model to sequentially solve subquestions. 
 
+#### Do models understand prompt? - sensitivity test every time! 
+* prompt format matters [Calibrate Before Use: improving few-shot performance of language models](https://arxiv.org/abs/2102.09690)
+* order of the examples matters [Fantastically Ordered Prompts and Where to Find Them: Overcoming Few-Shot Prompt Order Sensitivity](https://paperswithcode.com/paper/fantastically-ordered-prompts-and-where-to)
+    * the label does not matter (label order), but the label space does. label space mean negative/positive/neutral or good/bad/medium. 
+* autoprompt: the best prompts are Gibberish!
+    * [AutoPrompt: Eliciting Knowledge from Language Models with Automatically Generated Prompts](https://arxiv.org/abs/2010.15980)
+    * [Explaining Patterns in Data with Language Models via Interpretable Autoprompting](https://arxiv.org/abs/2210.01848), [code link](https://github.com/csinva/iprompt)
 
+### ChatGPT
+ChatGPT is a instrunction tuned model, but it has more data, more safety constraints, including truthfulness, safety, toxicity, bias, political discourse, etc, and it _updates all the time_. So, the takeaway is, you need to record the time/version you use it for replication purpose. 
 
-formatting the output
-4. give the model some examples - three classification examples
-5. tweet content - content that needs to be analyzed
+Compared to prompt engineering, adding more fine-tuning data might be a better approach, because prompt performance is not stable as the model kept changing. 
 
+#### Examples
+* religious bias, political bias, task bias (e.g., give me a python function to select men for a certain job).
 
-
-Hallucination issue - ask
-
+#### coding sesssions 
+* [WandB](https://wandb.ai/site) use this to evaluate the bias of models
+    * you don't have to set tempreture at all in consistent classification tasks. 
 
 
 
