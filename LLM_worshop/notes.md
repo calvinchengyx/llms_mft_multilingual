@@ -124,7 +124,35 @@ interpretatability
 * attention heads - 
 * saliency/attribution: gradient-based methods
 
- 
+
+Coding
+* can use [spaCy](https://spacy.io/) package for multilingual text analysis, especially NER 
+    * for modelling for sure hugging face transformers, but for text analysis probably `spacy` is more useful.  
+
+what is large model ? - 7 billion (magical number)
+
+## Day 2 Prompt Engineering + ChatGPT
+
+### Prompt Paradigm
+zero-shot, one-shot, few-shot
+[prompt engineering](https://www.promptingguide.ai/)
+
+#### Prompt Techniques
+* __chain of thoughts (CoT)__: give the model to think - specific the steps to do the task. 
+* __self-consistence__: give same prompt for several times, then choose the most consistent answer in the final set. 
+    1. prompt a language model with CoT techniques
+    2. replace the `greedy decode` to generate a diverse set of reasoning paths. Remember the model to train to predict the next token. `greedy decode` means the model will give the most probable words giving the input. the answer could be different if you input same answer many times. 
+    3. marginalize out the reasoning paths and aggregate by choosing the most consistent answer in the final answer set.
+    * _Notes_: the key of using human coders is we hope them are not correlated. model paramaters, it would be great if you can access those numbers. 
+    
+
+
+
+formatting the output
+4. give the model some examples - three classification examples
+5. tweet content - content that needs to be analyzed
+
+
 
 Hallucination issue - ask
 
