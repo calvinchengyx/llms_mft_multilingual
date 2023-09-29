@@ -168,6 +168,5 @@ Compared to prompt engineering, adding more fine-tuning data might be a better a
 #### coding sesssions 
 * [WandB](https://wandb.ai/site) use this to evaluate the bias of models
     * you don't have to set tempreture at all in consistent classification tasks. 
-
-
-
+* [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685) models that can save memory
+* __LLMs alignment__:Alignment in LLMs refers to the process of training these models to generate outputs that align with human preferences, intentions, and values. [Basic tutorial on this concept](https://www.linkedin.com/pulse/importance-alignment-llms-nilesh-barla#:~:text=Alignment%20in%20LLMs%20refers%20to,preferences%2C%20intentions%2C%20and%20values)
